@@ -1,7 +1,9 @@
+import Navbar from './components/Navbar'
+
 function App() {
   return (
-    <div className="min-h-screen bg-bg text-text flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-accent">LeetBreak 🚀</h1>
+    <div className="min-h-screen bg-bg text-text">
+      <Navbar />
     </div>
   )
 }
