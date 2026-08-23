@@ -1,3 +1,4 @@
+import BinarySearchVisualizer from '../components/BinarySearchVisualizer'
 import { useParams } from 'react-router-dom'
 import questions from '../data/questions'
 import SortVisualizer from '../components/SortVisualizer'
@@ -28,7 +29,7 @@ function QuestionDetailPage() {
 
         <div className="bg-surface border border-border rounded-lg p-4 md:col-span-2">
           <h3 className="text-text-muted text-xs uppercase mb-3">Visualization</h3>
-          <SortVisualizer />
+          {question.engine === 'binarySearch' ? <BinarySearchVisualizer /> : <SortVisualizer />}
         </div>
 
         <div className="bg-surface border border-border rounded-lg p-4 md:col-span-2">
